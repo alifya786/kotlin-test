@@ -2,14 +2,15 @@ package TeamcityTestCommon
 import jetbrains.buildServer.configs.kotlin.v2018_1.*
 
 
-import jetbrains.buildServer.configs.kotlin.v2017_2.vcs.GitVcsRoot
-import jetbrains.buildServer.configs.kotlin.v2017_2.*
-import jetbrains.buildServer.configs.kotlin.v2017_2.Project
-import jetbrains.buildServer.configs.kotlin.v2017_2.projectFeatures.VersionedSettings
-import jetbrains.buildServer.configs.kotlin.v2017_2.projectFeatures.versionedSettings
+import jetbrains.buildServer.configs.kotlin.v2018_1.vcs.GitVcsRoot
+import jetbrains.buildServer.configs.kotlin.v2018_1.*
+import jetbrains.buildServer.configs.kotlin.v2018_1.Project
+import jetbrains.buildServer.configs.kotlin.v2018_1.projectFeatures.VersionedSettings
+import jetbrains.buildServer.configs.kotlin.v2018_1.projectFeatures.versionedSettings
 
-import jetbrains.buildServer.configs.kotlin.v2017_2.buildSteps.gradle
-import jetbrains.buildServer.configs.kotlin.v2017_2.triggers.vcs
+import jetbrains.buildServer.configs.kotlin.v2018_1.buildSteps.gradle
+import jetbrains.buildServer.configs.kotlin.v2018_1.triggers.vcs
+import jetbrains.buildServer.configs.kotlin.v2018_1.buildSteps.script
 
 /*
 The settings script is an entry point for defining a TeamCity
@@ -38,15 +39,14 @@ version = "2018.1"
 project {
 
     buildType(KotlinTestingConfig)
+    buildType(KotlinTestingConfig2)
 }
 
 object KotlinTestingConfig : BuildType({
     name = "kotlin testing config"
 
-    artifactRules = "build/libs/kotlin.txt"
-
     vcs {
-        root(DslContext.settingRoot)
+        root(DslContext.settingsRoot)
     }
 
     steps {
@@ -63,3 +63,23 @@ object KotlinTestingConfig : BuildType({
        }
 })
 
+object KotlinTestingConfig2 : BuildType({
+    name = "kotlin testing config2"
+
+    vcs {
+        root(DslContext.settingsRoot)
+    }
+
+    steps {
+        script {
+            scriptContent = """
+                echo 'config two'
+            """.trimIndent()
+        }
+    }
+
+    triggers {
+        vcs {
+        }
+    }
+})
