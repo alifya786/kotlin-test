@@ -1,4 +1,15 @@
+package TeamcityTestCommon
 import jetbrains.buildServer.configs.kotlin.v2018_1.*
+
+
+import jetbrains.buildServer.configs.kotlin.v2017_2.vcs.GitVcsRoot
+import jetbrains.buildServer.configs.kotlin.v2017_2.*
+import jetbrains.buildServer.configs.kotlin.v2017_2.Project
+import jetbrains.buildServer.configs.kotlin.v2017_2.projectFeatures.VersionedSettings
+import jetbrains.buildServer.configs.kotlin.v2017_2.projectFeatures.versionedSettings
+
+import jetbrains.buildServer.configs.kotlin.v2017_2.buildSteps.gradle
+import jetbrains.buildServer.configs.kotlin.v2017_2.triggers.vcs
 
 /*
 The settings script is an entry point for defining a TeamCity
