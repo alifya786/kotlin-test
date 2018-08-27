@@ -31,4 +31,24 @@ project {
 
 object KotlinTestingConfig : BuildType({
     name = "kotlin testing config"
+
+    artifactRules = "build/libs/kotlin.txt"
+
+    vcs {
+        root(DslContext.settingRoot)
+    }
+
+    steps {
+        script {
+            scriptContent = """
+                echo 'packaging build'
+            """.trimIndent()
+        }
+    }
+
+    triggers {
+        vcs {
+        }
+       }
 })
+
