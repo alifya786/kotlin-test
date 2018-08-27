@@ -31,7 +31,6 @@ version = "2018.1"
 project {
 
     buildType(KotlinTestingConfig)
-    buildType(KotlinTestingConfig2)
 }
 
 object KotlinTestingConfig : BuildType({
@@ -55,23 +54,3 @@ object KotlinTestingConfig : BuildType({
        }
 })
 
-object KotlinTestingConfig2 : BuildType({
-    name = "kotlin testing config2"
-
-    vcs {
-        root(DslContext.settingsRoot)
-    }
-
-    steps {
-        script {
-            scriptContent = """
-                echo 'config two'
-            """.trimIndent()
-        }
-    }
-
-    triggers {
-        vcs {
-        }
-    }
-})

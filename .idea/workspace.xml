@@ -2,6 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="aced7021-ff23-4e78-8082-9fdb0b3d6279" name="Default" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
       <change beforePath="$PROJECT_DIR$/.teamcity/settings.kts" afterPath="$PROJECT_DIR$/.teamcity/settings.kts" />
     </list>
     <ignored path="$PROJECT_DIR$/.teamcity/target/" />
@@ -24,9 +25,11 @@
       <file leaf-file-name="settings.kts" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/.teamcity/settings.kts">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="34">
-              <caret line="2" column="0" lean-forward="true" selection-start-line="2" selection-start-column="0" selection-end-line="2" selection-end-column="0" />
-              <folding />
+            <state relative-caret-position="530">
+              <caret line="55" column="0" lean-forward="true" selection-start-line="55" selection-start-column="0" selection-end-line="55" selection-end-column="0" />
+              <folding>
+                <element signature="e#27#216#0" expanded="true" />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -34,8 +37,8 @@
       <file leaf-file-name="DslContext.kt" pinned="false" current-in-tab="false">
         <entry file="jar://$MAVEN_REPOSITORY$/org/jetbrains/teamcity/configs-dsl-kotlin/2018.1/configs-dsl-kotlin-2018.1-sources.jar!/jetbrains/buildServer/configs/kotlin/v2018_1/DslContext.kt">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="74">
-              <caret line="84" column="16" lean-forward="false" selection-start-line="84" selection-start-column="8" selection-end-line="84" selection-end-column="20" />
+            <state relative-caret-position="1768">
+              <caret line="104" column="46" lean-forward="false" selection-start-line="104" selection-start-column="46" selection-end-line="104" selection-end-column="46" />
               <folding />
             </state>
           </provider>
@@ -44,8 +47,8 @@
       <file leaf-file-name="DslContext.class" pinned="false" current-in-tab="false">
         <entry file="jar://$MAVEN_REPOSITORY$/org/jetbrains/teamcity/configs-dsl-kotlin/2018.1/configs-dsl-kotlin-2018.1.jar!/jetbrains/buildServer/configs/kotlin/v2018_1/DslContext.class">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="85">
-              <caret line="5" column="14" lean-forward="false" selection-start-line="5" selection-start-column="14" selection-end-line="5" selection-end-column="14" />
+            <state relative-caret-position="387">
+              <caret line="26" column="35" lean-forward="true" selection-start-line="26" selection-start-column="35" selection-end-line="26" selection-end-column="87" />
               <folding />
             </state>
           </provider>
@@ -355,27 +358,29 @@
         </state>
       </provider>
     </entry>
-    <entry file="jar://$MAVEN_REPOSITORY$/org/jetbrains/teamcity/configs-dsl-kotlin/2018.1/configs-dsl-kotlin-2018.1.jar!/jetbrains/buildServer/configs/kotlin/v2018_1/DslContext.class">
+    <entry file="jar://$MAVEN_REPOSITORY$/org/jetbrains/teamcity/configs-dsl-kotlin/2018.1/configs-dsl-kotlin-2018.1-sources.jar!/jetbrains/buildServer/configs/kotlin/v2018_1/DslContext.kt">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="85">
-          <caret line="5" column="14" lean-forward="false" selection-start-line="5" selection-start-column="14" selection-end-line="5" selection-end-column="14" />
+        <state relative-caret-position="1768">
+          <caret line="104" column="46" lean-forward="false" selection-start-line="104" selection-start-column="46" selection-end-line="104" selection-end-column="46" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="jar://$MAVEN_REPOSITORY$/org/jetbrains/teamcity/configs-dsl-kotlin/2018.1/configs-dsl-kotlin-2018.1-sources.jar!/jetbrains/buildServer/configs/kotlin/v2018_1/DslContext.kt">
+    <entry file="jar://$MAVEN_REPOSITORY$/org/jetbrains/teamcity/configs-dsl-kotlin/2018.1/configs-dsl-kotlin-2018.1.jar!/jetbrains/buildServer/configs/kotlin/v2018_1/DslContext.class">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="74">
-          <caret line="84" column="16" lean-forward="false" selection-start-line="84" selection-start-column="8" selection-end-line="84" selection-end-column="20" />
+        <state relative-caret-position="387">
+          <caret line="26" column="35" lean-forward="true" selection-start-line="26" selection-start-column="35" selection-end-line="26" selection-end-column="87" />
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/.teamcity/settings.kts">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="34">
-          <caret line="2" column="0" lean-forward="true" selection-start-line="2" selection-start-column="0" selection-end-line="2" selection-end-column="0" />
-          <folding />
+        <state relative-caret-position="530">
+          <caret line="55" column="0" lean-forward="true" selection-start-line="55" selection-start-column="0" selection-end-line="55" selection-end-column="0" />
+          <folding>
+            <element signature="e#27#216#0" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
