@@ -1,14 +1,6 @@
 package TeamcityTestCommon
 import jetbrains.buildServer.configs.kotlin.v2018_1.*
 
-
-import jetbrains.buildServer.configs.kotlin.v2018_1.vcs.GitVcsRoot
-import jetbrains.buildServer.configs.kotlin.v2018_1.*
-import jetbrains.buildServer.configs.kotlin.v2018_1.Project
-import jetbrains.buildServer.configs.kotlin.v2018_1.projectFeatures.VersionedSettings
-import jetbrains.buildServer.configs.kotlin.v2018_1.projectFeatures.versionedSettings
-
-import jetbrains.buildServer.configs.kotlin.v2018_1.buildSteps.gradle
 import jetbrains.buildServer.configs.kotlin.v2018_1.triggers.vcs
 import jetbrains.buildServer.configs.kotlin.v2018_1.buildSteps.script
 
