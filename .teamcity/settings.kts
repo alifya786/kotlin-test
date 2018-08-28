@@ -3,7 +3,6 @@ import jetbrains.buildServer.configs.kotlin.v2018_1.*
 
 import jetbrains.buildServer.configs.kotlin.v2018_1.triggers.vcs
 import jetbrains.buildServer.configs.kotlin.v2018_1.buildSteps.script
-import TeamcityTest.vcsRoots.TeamcityTest_HttpsGitlabTableausoftwareComBpunTeamcityTestGitRefsHeadsMaster
 
 /*
 The settings script is an entry point for defining a TeamCity
@@ -38,14 +37,14 @@ object KotlinTestingConfig : BuildType({
     name = "kotlin testing config"
 
     vcs {
-        root(TeamcityTest.vcsRoots.TeamcityTest_HttpsGitlabTableausoftwareComBpunTeamcityTestGitRefsHeadsMaster)
+        root(DslContext.settingsRoot)
     }
 
     steps {
         script {
             scriptContent = """
                 echo 'packaging build'
-            """.trimIndent()
+            """
         }
     }
 
@@ -55,3 +54,23 @@ object KotlinTestingConfig : BuildType({
        }
 })
 
+object KotlinTestingConfig2 : BuildType({
+    name = "kotlin testing config2"
+
+    vcs {
+        root(DslContext.settingsRoot)
+    }
+
+    steps {
+        script {
+            scriptContent = """
+                echo 'config two'
+            """
+        }
+    }
+
+    triggers {
+        vcs {
+        }
+    }
+})
