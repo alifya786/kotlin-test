@@ -3,6 +3,7 @@ import jetbrains.buildServer.configs.kotlin.v2018_1.*
 
 import jetbrains.buildServer.configs.kotlin.v2018_1.triggers.vcs
 import jetbrains.buildServer.configs.kotlin.v2018_1.buildSteps.script
+import TeamcityTest.vcsRoots.TeamcityTest_HttpsGitlabTableausoftwareComBpunTeamcityTestGitRefsHeadsMaster
 
 /*
 The settings script is an entry point for defining a TeamCity
@@ -37,7 +38,7 @@ object KotlinTestingConfig : BuildType({
     name = "kotlin testing config"
 
     vcs {
-        root(DslContext.settingsRoot)
+        root(TeamcityTest.vcsRoots.TeamcityTest_HttpsGitlabTableausoftwareComBpunTeamcityTestGitRefsHeadsMaster)
     }
 
     steps {

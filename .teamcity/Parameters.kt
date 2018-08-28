@@ -1,0 +1,5 @@
+import TeamcityTest.vcsRoots.TeamcityTest_HttpsGitlabTableausoftwareComBpunTeamcityTestGitRefsHeadsMaster
+import jetbrains.buildServer.configs.kotlin.v2018_1.vcs.GitVcsRoot
+
+val project_vcsRoot: GitVcsRoot = TeamcityTest_HttpsGitlabTableausoftwareComBpunTeamcityTestGitRefsHeadsMaster
+
