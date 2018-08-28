@@ -1,7 +1,4 @@
-package TeamcityTestCommon
 import jetbrains.buildServer.configs.kotlin.v2018_1.*
-
-import jetbrains.buildServer.configs.kotlin.v2018_1.triggers.vcs
 import jetbrains.buildServer.configs.kotlin.v2018_1.buildSteps.script
 
 /*
@@ -36,41 +33,9 @@ project {
 object KotlinTestingConfig : BuildType({
     name = "kotlin testing config"
 
-    vcs {
-        root(DslContext.settingsRoot)
-    }
-
     steps {
         script {
-            scriptContent = """
-                echo 'packaging build'
-            """
-        }
-    }
-
-    triggers {
-        vcs {
-        }
-       }
-})
-
-object KotlinTestingConfig2 : BuildType({
-    name = "kotlin testing config2"
-
-    vcs {
-        root(DslContext.settingsRoot)
-    }
-
-    steps {
-        script {
-            scriptContent = """
-                echo 'config two'
-            """
-        }
-    }
-
-    triggers {
-        vcs {
+            scriptContent = """echo "TeamCity""""
         }
     }
 })
